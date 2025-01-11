@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
-public class SeleniumGridTest {
+public class SeleniumGridTest extends GridManager {
 	
 	@Test
     public void launcBrowser() throws InterruptedException, MalformedURLException {
