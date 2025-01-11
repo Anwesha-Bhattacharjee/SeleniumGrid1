@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
 
 import java.io.ObjectInputFilter.Config;
 import java.net.MalformedURLException;
@@ -11,7 +12,9 @@ import java.net.URL;
 import java.time.Duration;
 
 public class SeleniumGridTest {
-    public static void main(String[] args) throws InterruptedException, MalformedURLException {
+	
+	@Test
+    public void launcBrowser() throws InterruptedException, MalformedURLException {
         // Define the URL of the Selenium Grid Hub
     		URL hubUrl = new URL(System.getenv("SELENIUM_GRID_URL"));
 
