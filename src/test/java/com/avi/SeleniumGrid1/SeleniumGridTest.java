@@ -13,7 +13,7 @@ import java.time.Duration;
 public class SeleniumGridTest {
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
         // Define the URL of the Selenium Grid Hub
-    		URL hubUrl = new URL("http://192.168.0.102:4444/");
+    		URL hubUrl = new URL(System.getenv("SELENIUM_GRID_URL"));
 
             // Define desired capabilities for the browser
             DesiredCapabilities capabilities = new DesiredCapabilities();
